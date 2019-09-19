@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Horiscope</title>
+  <script type="text/javascript">
+    function astrosign()
+      {
+        var month = document.getElementById('month').value;
+        var day = document.getElementById('day').value;
+        var pic = "";
+        var msg = "";
+        day = parseInt(day);
+        month = parseInt(month);
+        if(month == 1)
+        {
+            if(day < 20)
+            {
+              pic = "<img src = 'capricorn.png'>"
+            }
+            else if(day < 32)
+            {
+              pic = "<img src = 'aquarius.png'>"
+            }
+          }
+        else if(month == 2)
+          {
+            if(day < 19)
+            {
+              pic = "<img src = 'aquarius.png'>"
+            }
+            else if(day < 29)
+            {
+              pic = "<img src = 'pisces.png'>"
+            }
+          }
+        else if(month == 3)
+          {
+            if(day < 21)
+            {
+              pic = "<img src = 'pisces.png'>"
+            }
+            else if(day < 32)
+            {
+              pic = "<img src = 'aries.png'>"
+            }
+          }
+          else if(month == 4)
+            {
+              if(day < 20)
+              {
+                pic = "<img src = 'aries.png'>"
+              }
+              else if(day < 31)
+              {
+                pic = "<img src = 'taurus.png'>"
+              }
+            }
+          else if(month == 5)
+            {
+              if(day < 21)
+              {
+                pic = "<img src = 'taurus.png'>"
+              }
+              else if(day < 32)
+              {
+                pic = "<img src = 'gemini.png'>"
+              }
+            }
+          else if(month == 6)
+            {
+              if(day < 21)
+              {
+                pic = "<img src = 'gemini.png'>"
+              }
+              else if(day < 31)
+              {
+                pic = "<img src = 'cancer.png'>"
+              }
+            }
+          else if(month == 7)
+            {
+              if(day < 23)
+              {
+                pic = "<img src = 'cancer.png'>"
+              }
+              else if(day < 32)
+              {
+                pic = "<img src = 'leo.png'>"
+              }
+            }
+          else if(month == 8)
+            {
+              if(day < 23)
+              {
+                pic = "<img src = 'leo.png'>"
+              }
+              else if(day < 31)
+              {
+                pic = "<img src = 'virgo.png'>"
+              }
+            }
+          else if(month == 9)
+            {
+              if(day < 23)
+              {
+                pic = "<img src = 'virgo.png'>"
+              }
+              else if(day < 32)
+              {
+                pic = "<img src = 'libra.png'>"
+              }
+            }
+          else if(month == 10)
+            {
+              if(day < 23)
+              {
+                pic = "<img src = 'libra.png'>"
+              }
+              else if(day < 31)
+              {
+                pic = "<img src = 'scorpio.png'>"
+              }
+            }
+          else if(month == 11)
+            {
+              if(day < 22)
+              {
+                pic = "<img src = 'scorpio.png'>"
+              }
+              else if(day < 32)
+              {
+                pic = "<img src = 'sagittarius.png'>"
+              }
+            }
+          else if(month == 12)
+            {
+              if(day < 22)
+              {
+                pic = "<img src = 'sagittarius.png'>"
+              }
+              else if(day < 31)
+              {
+                pic = "<img src = 'capricorn.png'>"
+              }
+            }
+          else {
+            pic = "try again"
+          }
+        document.getElementById('sign').innerHTML = pic;
+    }
+
+    function fortune()
+      {
+        var month = document.getElementById('month').value;
+        var day = document.getElementById('day').value;
+        var msg = "";
+        if(month == 1)
+        {
+            if(day < 20)
+            {
+              msg = "Sometimes a little indulgence has value far beyond its price";
+            }
+            else if(day < 32)
+            {
+              msg = "you've turned a financial and professional corner";
+            }
+          }
+        else if(month == 2)
+          {
+            if(day<19)
+            {
+                msg = "you've turned a financial and professional corner";
+            }
+            else if(day<29)
+            {
+              msg = "today you will recieve extra praise for all of your talents";
+            }
+          }
+        else if(month == 3)
+          {
+            if(day<21)
+            {
+              msg = "today you will recieve extra praise for all of your talents";
+            }
+            else if(day<32)
+            {
+              msg = "Today you will recieve some extra love and care from your family";
+            }
+          }
+          else if(month == 4)
+            {
+              if(day<20)
+              {
+                msg = "Today you will recieve some extra love and care from your family";
+              }
+              else if(day<31)
+              {
+                msg = "there will be tenstion in the air today and you will overall be in an awful mood"
+              }
+            }
+          else if(month == 5)
+            {
+              if(day<21)
+              {
+                msg = "there will be tenstion in the air today and you will overall be in an awful mood"
+              }
+              else if(day<32)
+              {
+                msg = "You may feel financialy unscettled today but no worry things will look up."
+              }
+            }
+          else if(month == 6)
+            {
+              if(day<21)
+              {
+                  msg = "You may feel financialy unscettled today but no worry things will look up."
+              }
+              else if(day<31)
+              {
+                msg = "Good news is comming today but don't share it with anyone"
+              }
+            }
+          else if(month == 7)
+            {
+              if(day<23)
+              {
+                msg = "Good news is comming today but don't share it with anyone"
+              }
+              else if(day<32)
+              {
+                msg = "spend your money carefully today"
+              }
+            }
+          else if(month == 8)
+            {
+              if(day<23)
+              {
+                msg = "spend your money carefully today"
+              }
+              else if(day<31)
+              {
+                msg = "You will feel energetic and enthusiastic today"
+            }
+          }
+          else if(month == 9)
+            {
+              if(day<23)
+              {
+                msg = "You will feel energetic and enthusiastic today"
+              }
+              else if(day<32)
+              {
+                msg = "spend time by your self today...or else"
+              }
+            }
+          else if(month == 10)
+            {
+              if(day<23)
+              {
+                msg = "spend time by your self today...or else"
+              }
+              else if(day<31)
+              {
+                msg = "Be ready for whatever change may come your way"
+              }
+            }
+          else if(month == 11)
+            {
+              if(day<22)
+              {
+                msg = "Be ready for whatever change may come your way"
+              }
+              else if(day<32)
+              {
+                msg = "Today will be a great day to find a romantic partner"
+              }
+            }
+          else if(month == 12)
+            {
+              if(day<22)
+              {
+                msg = "Today will be a great day to find a romantic partner"
+              }
+              else if(day<31)
+              {
+                msg = "Sometimes a little indulgence has value far beyond its price";
+              }
+            }
+          else {
+            msg = "try again"
+          }
+        document.getElementById('fortune').innerHTML = msg;
+  }
+  </script>
+
+  <style>
+  #body{
+    background-color: lightblue
+  }
+  #month{
+    background-color: pink
+  }
+  #day{
+    background-color: lightgreen
+  }
+</style>
+
+  </head>
+  <body id="body">
+      <p>Horiscope</p>
+      <input id="month" type="text" value="month">
+      <input id="day" type="text" value="day">
+      <input type="button" value="astrosign" onclick="astrosign()">
+      <input type="button" value="fortune" onclick="fortune()">
+      <br><br>
+      <span id="fortune"></span>
+      <span id="sign"></span>
+  </body>
+</html>
